@@ -63,6 +63,66 @@ Then I'll update this collection for deeper study.
 - [致谢](#致谢)
 
 
+- [经典论文](#经典论文)
+  - [算法](#算法)
+  - [环境](#环境)
+- [其他论文](#其他论文)
+- [综述](#综述)
+    - [**Recent Reviews (Since 2019)**](#recent-reviews-since-2019)
+    - [**Other Reviews (Before 2019)**](#other-reviews-before-2019)
+- [环境](#环境-1)
+- [多优化目标](#多优化目标)
+  - [综述类](#综述类)
+  - [环境](#环境-2)
+- [信用分配](#信用分配)
+  - [值分解](#值分解)
+  - [其他方法](#其他方法)
+  - [策略梯度](#策略梯度)
+- [多任务](#多任务)
+- [通信](#通信)
+  - [带宽限制](#带宽限制)
+  - [无带宽限制](#无带宽限制)
+  - [未分](#未分)
+- [涌现](#涌现)
+- [对手建模](#对手建模)
+- [博弈论](#博弈论)
+- [分层](#分层)
+- [角色](#角色)
+- [大规模](#大规模)
+- [即兴协作](#即兴协作)
+- [进化算法](#进化算法)
+  - [综述类](#综述类-1)
+- [团队训练](#团队训练)
+- [课程学习](#课程学习)
+- [平均场](#平均场)
+- [迁移学习](#迁移学习)
+- [元学习](#元学习)
+- [公平性](#公平性)
+- [奖励搜索](#奖励搜索)
+  - [稠密奖励搜索](#稠密奖励搜索)
+  - [稀疏奖励搜索](#稀疏奖励搜索)
+  - [未分](#未分-1)
+- [稀疏奖励](#稀疏奖励)
+- [图神经网络](#图神经网络)
+- [基于模型的](#基于模型的)
+- [神经架构搜索NAS](#神经架构搜索nas)
+- [安全学习](#安全学习)
+- [单智能体到多智能体](#单智能体到多智能体)
+- [动作空间](#动作空间)
+- [多样性](#多样性)
+- [分布式训练分布式执行](#分布式训练分布式执行)
+- [离线多智能体强化学习](#离线多智能体强化学习)
+- [对抗](#对抗)
+  - [单智能体](#单智能体)
+  - [多智能体](#多智能体)
+  - [对抗通信](#对抗通信)
+  - [评估](#评估)
+- [模仿学习](#模仿学习)
+- [训练数据](#训练数据)
+- [优化器](#优化器)
+- [待分类](#待分类)
+
+
 # 经典论文
 
 ## 算法
@@ -98,9 +158,9 @@ Then I'll update this collection for deeper study.
 | MPE             | [Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://proceedings.neurips.cc/paper/2017/file/68a9750337a418a86fe06c1991a1d64c-Paper.pdf) |                                                              | https://github.com/openai/multiagent-particle-envs           | NIPS            | 2017     |                                                              |
 | Pommerman       | [Pommerman: A multi-agent playground](https://arxiv.org/pdf/1809.07124.pdfâ€‹arxiv.org) |                                                              | https://github.com/MultiAgentLearning/playground             |                 | 2018     |                                                              |
 | HFO             | [Half Field Offense: An Environment for Multiagent Learning and Ad Hoc Teamwork](https://www.cse.iitb.ac.in/~shivaram/papers/hmsks_ala_2016.pdf) |                                                              | https://github.com/LARG/HFO                                  | AAMAS Workshop  | 2016     |                                                              |
-|                 | Multiagent Coordination Simulator                            | 基于局部信息的控制多种多智能体协调技术群体行为钉扎控制动态包围任意闭合曲线跟踪牧羊控制对抗恶意智能体的控制Python | https://github.com/tjards/multi-agent_sim?tab=readme-ov-file |                 | 2024     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=NTQ0YzJlYTk2YWM4MTM4NWQ0ZjIzMThhYzcwMjY5MjlfTG1mWk1CUWE2bmZ2MjdtMmNhNTVWSDlucURpaHVGWUtfVG9rZW46UGZ4QWJTRUZwb2Qxd0d4bmNiTmNwYXFibmpoXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+|                 | Multiagent Coordination Simulator                            | 基于局部信息的控制多种多智能体协调技术群体行为钉扎控制动态包围任意闭合曲线跟踪牧羊控制对抗恶意智能体的控制Python | https://github.com/tjards/multi-agent_sim?tab=readme-ov-file |                 | 2024     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=OGE4NmMxMzZkZjg2ODRhY2Q0YmNlYWJjYzIyYzZkMTBfaDZwZGIxMzNYYXFoUDZMcnF1Z3VvVkppVmJOdjVpWjhfVG9rZW46UGZ4QWJTRUZwb2Qxd0d4bmNiTmNwYXFibmpoXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 |                 |                                                              | A collection of reference environments for offline reinforcement learningPython | https://github.com/Farama-Foundation/D4RL                    |                 |          |                                                              |
-|                 |                                                              | a collection of discrete grid-world environments to conduct research on Reinforcement Learning | https://github.com/Farama-Foundation/Minigrid                |                 |          | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=YWI4NjliNzIyMTNjOWU1NmI3MzkxZThjMzIzNWNkNjZfRm1wMjJ0UFcwWEFEYjlCY2FFelM0eTZnRXFYUzl4Z0VfVG9rZW46QlpJUGJaSVd5b2pqTDF4YmFROWMwdzQxbnpnXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+|                 |                                                              | a collection of discrete grid-world environments to conduct research on Reinforcement Learning | https://github.com/Farama-Foundation/Minigrid                |                 |          | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=YTE3NGFkNzkzOTczNTE2NThmYmYwNWU1Yjg1NjI2MTFfSGtXd3NaZExxYmV6a0tDOEl4S01xY3FRR2xCTWJMRUtfVG9rZW46QlpJUGJaSVd5b2pqTDF4YmFROWMwdzQxbnpnXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 
 # 其他论文
 
@@ -175,7 +235,7 @@ Then I'll update this collection for deeper study.
 | Pommerman       | [Pommerman: A multi-agent playground](https://arxiv.org/pdf/1809.07124.pdfâ€‹arxiv.org) |                                  | https://github.com/MultiAgentLearning/playground   |                 | 2018     |                                                              |
 | HFO             | [Half Field Offense: An Environment for Multiagent Learning and Ad Hoc Teamwork](https://www.cse.iitb.ac.in/~shivaram/papers/hmsks_ala_2016.pdf) |                                  | https://github.com/LARG/HFO                        | AAMAS Workshop  | 2016     |                                                              |
 |                 | A unified official code releasement of MARL researches made by TJU-RL-Labagents规模信用分配探索-利用平衡混合action部分观测非稳定性：自模仿+对手建模Python |                                  | https://github.com/TJU-DRL-LAB/Multiagent-RL       |                 | 2022     |                                                              |
-|                 |                                                              | 自博弈强化学习环境多个博弈参与者 | https://github.com/davidADSP/SIMPLE                |                 | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDg4ZjY5MDU4ODU0NDliM2VmOGUwZDcwZDBlNWRjNDNfVmlrT2NDWVliaUlMR2F5Y0I1aElZS0FoU0JUQjU5azBfVG9rZW46SmZUdmJEZHBkb2FaTXF4bGNyS2M1ampkblBJXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+|                 |                                                              | 自博弈强化学习环境多个博弈参与者 | https://github.com/davidADSP/SIMPLE                |                 | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=M2FmODQ2OGU4Y2ZmY2UzMjI5ZTAwNWFhZTJhYTVkNjJfN1lyRU9ZWTFqRjg4a2RuQ09nVXNOZjRUb0xnZjZEY0hfVG9rZW46SmZUdmJEZHBkb2FaTXF4bGNyS2M1ampkblBJXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 
 # 多优化目标
 
@@ -290,7 +350,7 @@ Then I'll update this collection for deeper study.
 | **Paper**                                                    | **Key Words**                                                | **Code**                                       | **Accepted at** | **Year** | **Others**                                                   |      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------------------------- | --------------- | -------- | ------------------------------------------------------------ | ---- |
 |                                                              |                                                              |                                                |                 |          |                                                              |      |
-| [Responsive Regulation of Dynamic UAV Communication Networks Based on Deep Reinforcement Learning](https://arxiv.org/pdf/2108.11012) | 无人机（UAV）通信网络动态调控异步DDPGPython                  | https://github.com/ducmngx/DDPG-UAV-Efficiency |                 | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZWY4NDcyNjQyYmU0NjliYjlmMzk0YzU4NjczZGU1YTJfWDB0YTBDYmIwZ3pMZmE5REVvUXgzdGVWWU1yUDh2V3FfVG9rZW46UjRtS2JJcVRYbzRXZWt4ZThkR2Mzak1hbnVmXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |      |
+| [Responsive Regulation of Dynamic UAV Communication Networks Based on Deep Reinforcement Learning](https://arxiv.org/pdf/2108.11012) | 无人机（UAV）通信网络动态调控异步DDPGPython                  | https://github.com/ducmngx/DDPG-UAV-Efficiency |                 | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=M2M1NjVmMzdmNjgyNTViZDQ3YTRiMDJiYWYxZmQxY2FfNnBEb25RaGl1WUR4NlJkcWJDQk9hUmV0dG1rZE0ydU1fVG9rZW46UjRtS2JJcVRYbzRXZWt4ZThkR2Mzak1hbnVmXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |      |
 | [eQMARL: Entangled Quantum Multi-Agent Reinforcement Learning for Distributed Cooperation over Quantum Channels](https://arxiv.org/pdf/2405.17486) | 分布式多智能体强化学习信息共享量子通道收敛更快 效果更好 减少计算负担 | https://github.com/news-vt/eqmarl              |                 | 2025     |                                                              |      |
 | [Learning to Communicate Through Implicit Communication Channels](https://arxiv.org/pdf/2411.01553) | 隐式通信协议（ICP）框架更高效                                |                                                |                 | 2024     |                                                              |      |
 | [Scaling Large Language Model-based Multi-Agent Collaboration](https://arxiv.org/pdf/2406.07155) | LLM协作涌现通信模式有向无环图1000个智能体                    | https://github.com/OpenBMB/ChatDev             |                 | 2024     |                                                              |      |
@@ -338,14 +398,14 @@ Then I'll update this collection for deeper study.
 | [A Game-Theoretic Model and Best-Response Learning Method for Ad Hoc Coordination in Multiagent Systems](https://arxiv.org/pdf/1506.01170) |                                                              |                                                              | AAMAS              | 2013     |                                                              |
 | [Neural Replicator Dynamics: Multiagent Learning via Hedging Policy Gradients](http://www.ifaamas.org/Proceedings/aamas2020/pdfs/p492.pdf) |                                                              |                                                              | AAMAS              | 2020     |                                                              |
 | [ASP: Learn a Universal Neural Solver!](https://arxiv.org/abs/2303.00466) |                                                              | https://github.com/LOGO-CUHKSZ/ASP                           | IEEE               | 2023     |                                                              |
-|                                                              | 自博弈代码框架Python                                         | https://github.com/davidADSP/SIMPLE                          |                    | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGY5YzQ1ZmE2YjNmMGMxZGFhODI3NGZjNGJlMDU4MzVfeFJPNTlaVFh3RGo2eHpxNDZsSFlCbGl0TlppMkZYM1VfVG9rZW46RXhMTmJFZUJob2toQ1l4eThIQmNDZ3FYblVQXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+|                                                              | 自博弈代码框架Python                                         | https://github.com/davidADSP/SIMPLE                          |                    | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=NmIxY2I1NjA3YmJiZDNjMzdmM2MxZTlkZjdmZjFhZGRfckowYXBNOGNIODhERmdWaTQ0UlQ4dk9rN1l6a2hSRzBfVG9rZW46RXhMTmJFZUJob2toQ1l4eThIQmNDZ3FYblVQXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 | [TimeChamber: A Massively Parallel Large Scale Self-Play Framework](https://forums.developer.nvidia.com/t/timechamber-a-massively-parallel-large-scale-self-play-framework/226567) | 大规模并行自我对战框架Python                                 | https://github.com/inspirai/TimeChamber                      |                    | 2022     |                                                              |
 |                                                              | 复现与多智能体博弈相关的论文                                 | https://github.com/BaoyiCui/MAS-Game                         |                    |          |                                                              |
 | [Minimizing Weighted Counterfactual Regret with Optimistic Online Mirror Descent](https://arxiv.org/pdf/2404.13891) | 反事实遗憾最小化（Counterfactual Regret Minimization, CFR）不完全信息博弈快速收敛 | https://github.com/rpSebastian/PDCFRPlus                     |                    | 2024     |                                                              |
 | [Dynamic Discounted Counterfactual Regret Minimization](https://openreview.net/pdf?id=6PbvbLyqT6) | 第一个使用动态的、自动学习的方案来对先前迭代进行折扣的均衡求解框架泛化收敛速度 | https://github.com/rpSebastian/DDCFR                         |                    | 2024     |                                                              |
 |                                                              | Awesome Game AI materials of Multi-Agent Reinforcement Learning | https://github.com/datamllab/awesome-game-ai                 |                    |          |                                                              |
 | [Pipeline PSRO: A Scalable Approach for Finding Approximate Nash Equilibria in Large Games](https://arxiv.org/pdf/2006.08555) | 零和不完全信息博弈收敛速度快                                 | https://github.com/JBLanier/pipeline-psro                    |                    | 2020     |                                                              |
-| [Neural Auto-Curricula](https://arxiv.org/pdf/2106.02745)    | 神经自动课程自动：选择对手策略 + 寻找最佳响应元梯度下降通用MARL算法可扩展性 | https://github.com/waterhorse1/NAC                           |                    | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=OGE2OWQ5OWVlOWNmZDQxZmEzMjhiZjI0Y2Y1NWExMGZfYnNQeUx2eHpCQ3lNcDdTRENIcVRwM2N0cGxNWmt0d0hfVG9rZW46RzNCaGJXTlFTb0pwZ2R4cTV0QmM3WnhSbnBoXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+| [Neural Auto-Curricula](https://arxiv.org/pdf/2106.02745)    | 神经自动课程自动：选择对手策略 + 寻找最佳响应元梯度下降通用MARL算法可扩展性 | https://github.com/waterhorse1/NAC                           |                    | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjExN2MxNzU5ZDM1NDZlMzFmYTQ1NWM4OWIyMGZkYjJfdW83ajFhcXc2cHY0ZFlkdDVRRHVweTlRMzBlVG5mZG9fVG9rZW46RzNCaGJXTlFTb0pwZ2R4cTV0QmM3WnhSbnBoXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 | [Temporal Induced Self-Play for Stochastic Bayesian Games](https://arxiv.org/pdf/2108.09444) | 动态博弈问题基于强化学习的算法框架基于策略梯度可扩展性       | https://github.com/laonahongchen/Temporal-Induced-Self-Play-for-Stochastic-Bayesian-Games |                    | 2020     |                                                              |
 
 # 分层
@@ -413,7 +473,7 @@ Then I'll update this collection for deeper study.
 |                                                              | [Socialized Learning: Making Each Other Better Through Multi-Agent Collaboration](https://openreview.net/pdf?id=aaeJpJw5Ur) | 社会化学习（Socialized Learning, SL）集体协作 互惠利他模块   | https://github.com/yxjdarren/SL                              |                          | 2024     |                                                              |      |
 |                                                              | [RACE: Improve Multi-Agent Reinforcement Learning with Representation Asymmetry and Collaborative Evolution](https://proceedings.mlr.press/v202/li23i/li23i.pdf) | MARL+演化算法+表征学习                                       | https://github.com/yeshenpy/RACE                             |                          | 2023     |                                                              |      |
 |                                                              | [MALib: A Parallel Framework for Population-based Multi-agent Reinforcement Learning](https://arxiv.org/pdf/2106.07551) | 基于种群的多智能体强化学习自动课程学习可扩展速度比RLlib快5倍比OpenSpiel至少快3倍 | https://github.com/sjtu-marl/malib                           |                          | 2021     |                                                              |      |
-|                                                              | [EvoRainbow: Combining Improvements in Evolutionary Reinforcement Learning for Policy Search](https://openreview.net/pdf?id=75Hes6Zse4) | 进化算法（EAs）和强化学习（RL）结合机制探索5种Python         | https://github.com/yeshenpy/EvoRainbow                       |                          | 2024     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDA0MWJiMmNlNjhiNDVjNWYxZDE4ODI2ZWRkYjE5YWVfeUkxUlBzbEY0eTA0T3ZobVI2d291OXRFcUFkNmVnbjJfVG9rZW46TUxCT2JpSlNib3JIS3R4YUhCd2NCOTRvbjFjXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |      |
+|                                                              | [EvoRainbow: Combining Improvements in Evolutionary Reinforcement Learning for Policy Search](https://openreview.net/pdf?id=75Hes6Zse4) | 进化算法（EAs）和强化学习（RL）结合机制探索5种Python         | https://github.com/yeshenpy/EvoRainbow                       |                          | 2024     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ODIyYTEzNjgwYjY2MDYwZDQzNGI0NTU4NmIxMmUwN2RfUTlZbVNVcU02VGh1TEhsdGJEVUtZU2xjUmVnVnpiRmZfVG9rZW46TUxCT2JpSlNib3JIS3R4YUhCd2NCOTRvbjFjXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |      |
 |                                                              |                                                              |                                                              |                                                              |                          |          |                                                              |      |
 | 1.**EA辅助RL****-参数搜索**                                  | [Reinforcement Learning beyond The Bellman Equation: Exploring Critic Objectives using Evolution](https://direct.mit.edu/isal/proceedings/isal2020/32/441/98464) |                                                              | https://github.com/ajleite/RLBeyondBellman                   |                          | 2020     |                                                              |      |
 | [Genetic Soft Updates for Policy Evolution in Deep Reinforcement Learning](https://openreview.net/forum?id=TGFO0DbD_pk) |                                                              |                                                              |                                                              | 2021                     |          |                                                              |      |
@@ -545,7 +605,7 @@ Then I'll update this collection for deeper study.
 | [Bridging mean-field games and normalizing flows with trajectory regularization](https://arxiv.org/pdf/2206.14990) | 联系平均场博弈与归一化流Python | https://github.com/Whalefishin/MFG_NF                        |                               | 2023     |                                                              |
 |                                                              | Python                         | https://github.com/hsvgbkhgbv/Mean-field-Fictitious-Play-in-Potential-Games |                               |          |                                                              |
 | [MFGLib A Library for Mean Field Games](https://arxiv.org/pdf/2304.08630) | 库                             | https://github.com/radar-research-lab/MFGLib                 |                               | 2023     |                                                              |
-| [APAC-Net: Alternating the population and agent control via two neural networks to solve high-dimensional stochastic mean field games](https://arxiv.org/pdf/2002.10113) | 求解随机均场博弈100维          | https://github.com/atlin23/apac-net                          |                               | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDRmMjdlM2Q3MDJhMmNkNDZlMWY3NGZmY2M0ZGVjYzJfc1dRYndOdGdkbWFTdEZXOVNnRllQUkJ5WG9LeldHb3dfVG9rZW46TWR3d2J3cDk2b2ZmTGV4cmR3VGNrUHhIbmxjXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+| [APAC-Net: Alternating the population and agent control via two neural networks to solve high-dimensional stochastic mean field games](https://arxiv.org/pdf/2002.10113) | 求解随机均场博弈100维          | https://github.com/atlin23/apac-net                          |                               | 2021     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=NDcwZjg3OWM2MmQ1M2ExMzRmOTZjYTdkNGMxYzNlZjRfYjBpdE9ja0txVzA4RjVPaHJobFYwN2tUdk02dVVIOEFfVG9rZW46TWR3d2J3cDk2b2ZmTGV4cmR3VGNrUHhIbmxjXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 
 # 迁移学习
 
@@ -621,7 +681,7 @@ Then I'll update this collection for deeper study.
 | [Multi-Agent Reinforcement Learning with Graph Clustering](https://arxiv.org/pdf/2008.08808) |      |                                                   |                 | 2020     |                                                              |
 | [Learning to Coordinate with Coordination Graphs in Repeated Single-Stage Multi-Agent Decision Problems](http://proceedings.mlr.press/v80/bargiacchi18a/bargiacchi18a.pdf) |      |                                                   | ICML            | 2018     |                                                              |
 | [Distributed constrained combinatorial optimization leveraging hypergraph neural networks](https://arxiv.org/pdf/2311.09375) |      | https://github.com/nasheydari/HypOp               |                 | 2023     |                                                              |
-| [Learning Scalable Policies over Graphs for Multi-Robot Task Allocation using Capsule Attention Networks](https://ieeexplore.ieee.org/abstract/document/9812370/) |      | https://github.com/iamstevepaul/MRTA-Graph_RL     |                 |          | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDljMDI0MmU3MmZlNjY3Y2Q3ZDhiNWJmMDcwNDZiYzFfSzNHOVRhd2sweEI5ZEc2OVZrMUpjOVhLRmJ1Z0tsQ3ZfVG9rZW46S1VqTGJucEN1b01YNDF4UDNzdGNkZjlEbnNlXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |
+| [Learning Scalable Policies over Graphs for Multi-Robot Task Allocation using Capsule Attention Networks](https://ieeexplore.ieee.org/abstract/document/9812370/) |      | https://github.com/iamstevepaul/MRTA-Graph_RL     |                 |          | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjUxYzQ2MzNjODFkMzU3ODM1NmNmYzc1MzJlNzkwM2VfSUVPYThMNGJmSlZFU3BKQWNyVzFob0RVZWZMZmp0dmZfVG9rZW46S1VqTGJucEN1b01YNDF4UDNzdGNkZjlEbnNlXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |
 
 # 基于模型的
 
@@ -756,7 +816,7 @@ Then I'll update this collection for deeper study.
 
 | **Paper**                                                    | **Key Words**                                   | **Code**                                       | **Accepted at** | **Year** | **Others**                                                   |      |
 | ------------------------------------------------------------ | ----------------------------------------------- | ---------------------------------------------- | --------------- | -------- | ------------------------------------------------------------ | ---- |
-| [MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale](https://arxiv.org/abs/2409.00134) | 路径发现无通信 无启发式模仿学习部分可观测Python | https://github.com/CognitiveAISystems/MAPF-GPT |                 | 2025     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDNlZTFkODdlZjAwZDJkYmUyYTU3YTQ1NWIzMjY4MzhfWUZaOHdrOFczcHpVV2dXblJNa01CWUhCeTdmTjdUallfVG9rZW46TGt3YmJ0NVlYb1hqSHB4SXdCS2NXdThRbmplXzE3NDU1NDEwMDg6MTc0NTU0NDYwOF9WNA) |      |
+| [MAPF-GPT: Imitation Learning for Multi-Agent Pathfinding at Scale](https://arxiv.org/abs/2409.00134) | 路径发现无通信 无启发式模仿学习部分可观测Python | https://github.com/CognitiveAISystems/MAPF-GPT |                 | 2025     | ![img](https://e8bw0pe0za.feishu.cn/space/api/box/stream/download/asynccode/?code=OGIyZTZhNjk4ZTRkNWJjODhjNTQ0MmM4MmIxZmUwZmVfcXdEZXFYUDdtWkZ3enc1MXBOR2lTbXRCQ1VwRzZld2dfVG9rZW46TGt3YmJ0NVlYb1hqSHB4SXdCS2NXdThRbmplXzE3NDU1NDU4MzA6MTc0NTU0OTQzMF9WNA) |      |
 |                                                              |                                                 |                                                |                 |          |                                                              |      |
 |                                                              |                                                 |                                                |                 |          |                                                              |      |
 
@@ -794,6 +854,8 @@ Then I'll update this collection for deeper study.
 
 # 致谢
 [Chen, Hao, Multi-Agent Reinforcement Learning Papers with Code](https://github.com/TimeBreaker/MARL-papers-with-code)
+
 [Chen, Hao, Multi Agent Reinforcement Learning papers](https://github.com/TimeBreaker/Multi-Agent-Reinforcement-Learning-papers)
+
 [Chen, Hao, MARL Resources Collection](https://github.com/TimeBreaker/MARL-resources-collection)
 
