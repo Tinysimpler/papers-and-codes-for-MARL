@@ -1,3 +1,7 @@
+This is a collection of Multi-Agent Reinforcement Learning (MARL) papers with code. I have selected some relatively important papers with open source code and categorized them by time and method based on the efforts of [Chen, Hao, Multi-Agent Reinforcement Learning Papers with Code](https://github.com/TimeBreaker/MARL-papers-with-code), thanks to him.
+
+Then I'll update this collection for deeper study.
+
 - [经典论文](#经典论文)
   - [算法](#算法)
   - [环境](#环境)
@@ -56,6 +60,7 @@
 - [训练数据](#训练数据)
 - [优化器](#优化器)
 - [待分类](#待分类)
+- [致谢](#致谢)
 
 
 # 经典论文
@@ -786,3 +791,9 @@
 | [Neural Spline Flows](https://arxiv.org/pdf/1906.04032)      | 流模型概率密度评估和采样模型灵活性PyTorchPython | https://github.com/bayesiains/nflowshttps://github.com/bayesiains/nsf |                 | 2021     |
 | 领域知识图谱数据采集、数据处理以及可视化                     |                                                 | https://github.com/Louis-tiany/Military-KG                   |                 |          |
 |                                                              |                                                 |                                                              |                 |          |
+
+# 致谢
+[Chen, Hao, Multi-Agent Reinforcement Learning Papers with Code](https://github.com/TimeBreaker/MARL-papers-with-code)
+[Chen, Hao, Multi Agent Reinforcement Learning papers](https://github.com/TimeBreaker/Multi-Agent-Reinforcement-Learning-papers)
+[Chen, Hao, MARL Resources Collection](https://github.com/TimeBreaker/MARL-resources-collection)
+
